@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Card = ({ img, title, currency, price, avg_review }) => {
+const Card = ({ img, title, currency, price, avg_review, to }) => {
   return (
     <div className="card">
       <img src={img} alt="book" width={250} />
@@ -16,7 +16,7 @@ const Card = ({ img, title, currency, price, avg_review }) => {
       <p>
         {currency} <b>{price}</b>
       </p>
-      <Link to="/">Show Details</Link>
+      <Link to={to}>Show Details</Link>
     </div>
   );
 };

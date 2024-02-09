@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import "./style.css";
 import { useEffect, useState } from "react";
 import { Card } from "../../components";
@@ -11,7 +9,6 @@ const BookLis = () => {
     )
       .then((response) => response.json())
       .then((json) => {
-        console.log(json.data);
         setBooks(json.data);
       });
   }, []);
@@ -27,6 +24,7 @@ const BookLis = () => {
             price={book.attributes.price}
             img={book.attributes.book.image_url}
             title={book.attributes.book.title}
+            to={book.id}
           />
         ))}
     </div>

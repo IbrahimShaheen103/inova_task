@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Layout from "./layout";
-import { BookList, Home } from "./pages";
+import { BookList, Home, Details } from "./pages";
 
 function App() {
   const router = createBrowserRouter(
@@ -13,6 +13,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="list" element={<BookList />} />
+        <Route path="list/:id" element={<Details />} />
       </Route>
     )
   );

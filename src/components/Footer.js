@@ -1,9 +1,9 @@
 import logo from "../assets/main-logo.svg";
 const Footer = () => {
   return (
-    <footer class="example-2">
-      <div class="content site-footer--content">
-        <div class="footer-left">
+    <footer className="example-2">
+      <div className="content site-footer--content">
+        <div className="footer-left">
           <img src={logo} alt="logo" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
@@ -16,7 +16,7 @@ const Footer = () => {
             quibusdam
           </p>
         </div>
-        <div class="footer-right">
+        <div className="footer-right">
           <address>
             <p>
               Email Me: <a href="mailto:hello@shihabiiuc.com">Test</a>
@@ -32,9 +32,9 @@ const Footer = () => {
           </address>
         </div>
       </div>
-      <div class="copyright-notice">
+      <div className="copyright-notice">
         <p>
-          © <time datetime="2024">2024,</time> All rights reserved by shahin
+          © <b>2024,</b> All rights reserved by shahin
         </p>
       </div>
     </footer>
